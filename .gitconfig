@@ -3,3 +3,6 @@
     st = status
     br = branch
     cm = commit
+[user]
+    name = newnakashima
+    email = newnakashima2014@gmail.com

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -Fis $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
-ln -Fis $HOME/dotfiles/.zshrc     $HOME/.zshrc
-ln -Fis $HOME/dotfiles/.vimrc     $HOME/.vimrc
-ln -Fis $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+ln -Ffs $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+ln -Ffs $HOME/dotfiles/.zshrc     $HOME/.zshrc
+ln -Ffs $HOME/dotfiles/.vimrc     $HOME/.vimrc
+ln -Ffs $HOME/dotfiles/.gitconfig $HOME/.gitconfig
