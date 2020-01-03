@@ -33,6 +33,22 @@
                                         "key_code": "return_or_enter"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ]
                             }
                         ]
                     }
