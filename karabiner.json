@@ -19,7 +19,6 @@
                         "description": "Control + m to enter",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
@@ -32,10 +31,10 @@
                                     {
                                         "key_code": "return_or_enter"
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
@@ -48,13 +47,37 @@
                                     {
                                         "key_code": "return_or_enter"
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
                 ]
             },
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 615,
+                        "vendor_id": 76
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        }
+                    ]
+                }
+            ],
             "fn_function_keys": [
                 {
                     "from": {
