@@ -98,6 +98,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:/usr/local/bin
+# export PATH=$PATH:/usr/local/bin
 
 alias d='docker-compose'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/nakashima/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nakashima/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/nakashima/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nakashima/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
