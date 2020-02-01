@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=$PATH:/usr/local/bin
 
 alias d='docker-compose'
+alias jk='jekyll'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/nakashima/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nakashima/google-cloud-sdk/path.zsh.inc'; fi
@@ -110,3 +111,5 @@ if [ -f '/Users/nakashima/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users
 
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export EDITOR=vim
