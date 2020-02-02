@@ -1,3 +1,5 @@
+[core]
+    ignorecase = false
 [alias]
     co = checkout
     st = status
