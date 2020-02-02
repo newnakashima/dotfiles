@@ -6,6 +6,9 @@ set tabstop=4
 set expandtab
 set autoindent
 
+" Jekyll用
+inoremap $ts <C-R>=strftime("%Y-%m-%d %H:%M:%S +0900")<RETURN>
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'elmcast/elm-vim'
