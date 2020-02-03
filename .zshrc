@@ -112,4 +112,5 @@ if [ -f '/Users/nakashima/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=$HOME/local/bin:$PATH
 export EDITOR=vim

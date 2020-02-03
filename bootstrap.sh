@@ -9,3 +9,7 @@ ln -Ffs $HOME/dotfiles/karabiner.json   $HOME/.config/karabiner/karabiner.json
 # Docker
 ln -Ffs $HOME/dotfiles/.docker/config.json $HOME/.docker/config.json
 ln -Ffs $HOME/dotfiles/.docker/daemon.json $HOME/.docker/daemon.json
+
+# vimplug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
