@@ -14,5 +14,9 @@ inoremap $ts <C-R>=strftime("%Y-%m-%d %H:%M:%S +0900")<RETURN>
 call plug#begin('~/.vim/plugged')
 
 Plug 'elmcast/elm-vim'
+Plug 'previm/previm'
 
 call plug#end()
+
+let g:previm_open_cmd = 'open -a Google\ Chrome'
+
