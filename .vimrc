@@ -15,8 +15,10 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'elmcast/elm-vim'
 Plug 'previm/previm'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
 let g:previm_open_cmd = 'open -a Google\ Chrome'
+inoremap <TAB> <c-r>=emmet#expandAbbr(0,"")<cr>
 
