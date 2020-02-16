@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# install Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ln -Ffs $HOME/dotfiles/.tmux.conf       $HOME/.tmux.conf
 ln -Ffs $HOME/dotfiles/.zshrc           $HOME/.zshrc
 ln -Ffs $HOME/dotfiles/.vimrc           $HOME/.vimrc
