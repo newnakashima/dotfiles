@@ -19,6 +19,11 @@ Plug 'mattn/emmet-vim'
 
 call plug#end()
 
+" previm
 let g:previm_open_cmd = 'open -a Google\ Chrome'
-inoremap <TAB> <c-r>=emmet#expandAbbr(0,"")<cr>
+
+" emmet
+let g:user_emmet_expandabbr_key = '<TAB>'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
