@@ -37,10 +37,14 @@ echo "create symlink to $HOME/.config/karabiner/karabiner.json"
 ln -Ffs $HOME/dotfiles/karabiner.json   $HOME/.config/karabiner/karabiner.json
 
 # Docker
-echo "create symlink to $HOME/.docker/config.json"
-ln -Ffs $HOME/dotfiles/.docker/config.json $HOME/.docker/config.json
+if [ -d $HOME/.docker ]; then
+    echo "create symlink to $HOME/.docker/config.json"
+    ln -Ffs $HOME/dotfiles/.docker/config.json $HOME/.docker/config.json
 
-echo "create symlink to $HOME/.docker/daemon.json"
-ln -Ffs $HOME/dotfiles/.docker/daemon.json $HOME/.docker/daemon.json
+    echo "create symlink to $HOME/.docker/daemon.json"
+    ln -Ffs $HOME/dotfiles/.docker/daemon.json $HOME/.docker/daemon.json
+else
+    echo 'docker is not installed, skip.'
+fi
 
 echo 'bootstrap.sh is successfully done.'
