@@ -6,8 +6,8 @@ set tabstop=4
 set expandtab
 set autoindent
 set smartindent
-set spell
-set spelllang=en,cjk
+" set spell
+" set spelllang=en,cjk
 set clipboard+=unnamed
 
 " Jekyll用
