@@ -25,7 +25,19 @@ call plug#end()
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 
 " emmet
-let g:user_emmet_expandabbr_key = '<TAB>'
+" let g:user_emmet_expandabbr_key = '<TAB>'
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
 
+autocmd FileType vue set filetype=html
+
+augroup html
+    autocmd!
+    autocmd FileType html,css EmmetInstall |
+                \ imap <buffer><expr> <TAB>
+                \ emmet#isExpandable() ? "\<plug>(emmet-expand-abbr)"
+                \                      : "\<TAB>" |
+                \ set shiftwidth=2 |
+                \ set tabstop=2 |
+                \ set autoindent |
+                \ set smartindent
+augroup END
