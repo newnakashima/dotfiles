@@ -18,6 +18,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'elmcast/elm-vim'
 Plug 'previm/previm'
 Plug 'mattn/emmet-vim'
+Plug 'junegunn/fzf', { 'do': './install --in' }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -41,3 +44,6 @@ augroup html
                 \ set autoindent |
                 \ set smartindent
 augroup END
+
+nnoremap + :NERDTreeToggle<CR>
+nnoremap <C-P> :Files<SPACE>.<CR>
