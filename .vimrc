@@ -21,6 +21,7 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': './install --in' }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
@@ -31,7 +32,10 @@ let g:previm_open_cmd = 'open -a Google\ Chrome'
 " let g:user_emmet_expandabbr_key = '<TAB>'
 let g:user_emmet_install_global = 0
 
+autocmd BufNewFile,BufRead *.vue setfiletype vue
 autocmd FileType vue set filetype=html
+
+autocmd BufNewFile,BufRead *.blade.php setfiletype html
 
 augroup html
     autocmd!
@@ -47,3 +51,4 @@ augroup END
 
 nnoremap + :NERDTreeToggle<CR>
 nnoremap <C-P> :Files<SPACE>.<CR>
+
