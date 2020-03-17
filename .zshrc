@@ -114,5 +114,5 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$HOME/local/bin:$PATH
 export EDITOR=vim
-export FZF_DEFAULT_COMMAND='ls -a'
+# export FZF_DEFAULT_COMMAND='ls -a'
 
