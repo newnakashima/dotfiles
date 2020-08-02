@@ -116,3 +116,5 @@ export PATH=$HOME/local/bin:$PATH
 export EDITOR=vim
 # export FZF_DEFAULT_COMMAND='ls -a'
 
+export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
+

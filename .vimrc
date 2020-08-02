@@ -22,6 +22,7 @@ Plug 'junegunn/fzf', { 'do': './install --in' }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'posva/vim-vue'
+Plug 'ziglang/zig.vim'
 
 call plug#end()
 
