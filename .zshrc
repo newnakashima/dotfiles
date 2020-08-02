@@ -118,3 +118,4 @@ export EDITOR=vim
 
 export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
 
+export PATH="$HOME/.cargo/bin:$PATH"
