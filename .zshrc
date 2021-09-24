@@ -110,12 +110,43 @@ if [ -f '/Users/nakashima/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nakas
 if [ -f '/Users/nakashima/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nakashima/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH=$HOME/.composer/vendor/bin:$PATH
+# export PATH="/usr/local/opt/mysql/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$HOME/local/bin:$PATH
 export EDITOR=vim
 # export FZF_DEFAULT_COMMAND='ls -a'
 
-export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
+# export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
+export PATH=$PATH:/Users/nakashima/go/bin
+
+# opam configuration
+test -r /Users/nakashima/.opam/opam-init/init.zsh && . /Users/nakashima/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+eval $(opam env)
+
+export PATH=$PATH:/usr/local/lib/ruby/gems/2.7.0/bin
+
+eval "$(direnv hook zsh)"
+
+export PATH=$PATH:$HOME/develop/flutter/bin
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+eval "$(rbenv init -)"
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"
+
+export PATH=/usr/local/opt/bison/bin:$PATH
+export PATH=/usr/local/opt/libiconv/bin:$PATH
+
+# export CPATH=`xcrun --show-sdk-path`/usr/include
+# export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+
+export DENO_INSTALL="/Users/nakashima/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+[ -f "/Users/nakashima/.ghcup/env" ] && source "/Users/nakashima/.ghcup/env" # ghcup-env

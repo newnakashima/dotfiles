@@ -23,6 +23,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'posva/vim-vue'
 Plug 'ziglang/zig.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-scripts/PreserveNoEOL'
 
 call plug#end()
 
@@ -32,6 +34,9 @@ let g:previm_open_cmd = 'open -a Google\ Chrome'
 " emmet
 " let g:user_emmet_expandabbr_key = '<TAB>'
 let g:user_emmet_install_global = 0
+
+" PreserveNoEOL
+let g:PreserveNoEOL = 1
 
 autocmd BufNewFile,BufRead *.vue setfiletype vue
 autocmd FileType vue set filetype=html
